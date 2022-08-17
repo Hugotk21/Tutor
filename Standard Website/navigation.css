@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+
+  p {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: larger;
+  }
+  
+  .wrapper:after {
+    content: "";
+    display: block;
+  }
+
+.normalized {
+    padding-right: 1%;
+    padding-top: 8px;
+    padding-left: 1%;
+    margin-left: 10%;
+    margin-right: 0%;
+    margin-top: 10%;
+    width: 25%;
+    float:left;
+    border: 5px solid burlywood;
+    background-color: white;
+    border-radius: 25px;
+}
+.page1fix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0
+}
+.related-div {
+    margin-top: 10%;
+    margin-left: 0%;
+    float: right;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.related-image {
+    width: 100%;
+    border: 5px solid burlywood;
+    border-radius: 25px;
+}
+
+.coloured-border{
+    border: 5px solid burlywood;
+    border-radius: 25px;
+}
+
+.centered {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    border: 5px solid burlywood;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.centeredtitle {
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+    padding: 2%;
+    border: 5px solid burlywood;
+    background-color: white;
+    border-radius: 25px;
+}
+
+/* Uses the same code as the titlecards but is used for other things and has other images, thus it needs to be different lines of codes.*/
+  .centeredimage1 {
+    background-image: url("https://www.mundoperros.es/wp-content/uploads/2019/03/tres-labradores-de-color-negro-sentados-en-un-puente.jpg");
+    background-size: cover;
+    height: 500px;
+    border: burlywood solid 5px;
+    border-radius: 2px;
+    margin-top: 5%;
+  }
+
+  .centeredimage2 {
+    background-image: url("https://www.zooplus.co.uk/magazine/wp-content/uploads/2018/07/american-cocker-spaniel-in-the-grass.jpeg");
+    background-size: cover;
+    height: 600px;
+    border: burlywood solid 5px;
+    border-radius: 2px;
+    margin-top: 5%;
+  }
+
+  .centeredimage3 {
+    background-image: url("https://marvel-b1-cdn.bc0a.com/f00000000052994/www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-breeds/images/tibetan-spaniel-lying-outside.jpg");
+    background-size: cover;
+    height: 600px;
+    border: burlywood solid 5px;
+    border-radius: 2px;
+    margin-top: 5%;
+    background-position: center;
+  }
+/* The title-card and semitransparent text CSS for every page*/
+  .image-container {
+        background-image: url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2013/05/puppy-dog-adoption-finder-cute-websites-featured.jpg?q=50&fit=contain&w=960&h=480&dpr=1.5");
+        background-size: cover;
+        position: relative; /* Needed to position the cutout text in the middle of the image */
+        height: 500px; /* Some height */
+  }
+
+  .image-container2 {
+    background-image: url("https://i.chzbgr.com/full/8038240768/h94B602D1/3-yawning-dogs-gif");
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 500px; /* Some height */
+  }
+
+  .image-container3 {
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/indoor-dog-toys-1587002073.jpg?crop=1.00xw:0.751xh;0,0.161xh&resize=1200:*");
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 500px; /* Some height */
+  }
+
+  .image-container4 {
+    background-image: url("https://www.aspca.org/sites/default/files/apcc_people-foods-to-avoid_main-image.jpg");
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 500px; /* Some height */
+  }
+
+  .image-container5 {
+    background-image: url("https://www.burnhills.com/images/weatherbeeta-parka-1200d-deluxe-dog-coat-olive-tweed-print-p5312-15281_zoom.jpg");
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 500px; /* Some height */
+  }
+
+  .image-container6 {
+      background-image: url("https://c.tenor.com/qEp1RXAIc1wAAAAC/dog-call.gif");
+      background-size: cover;
+      position: relative;
+      height: 500px;
+  }
+
+  .text {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 10vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+    background-attachment: fixed;
+  }
+
+  /*footer*/
+.footer {
+    padding-top: 40px;
+    margin-top: 5%;
+    text-align: center;
+    background-color: rgb(87, 55, 30);
+    width: 100;
+    height: 40px;
+    color: white;
+    position: sticky;
+}
+/* a second footer for tab4, it breaks otherwise since the contents of that page doesnt really cover any physical space on the tab, which just makes the first footer not work*/
+.footer2{
+    padding-top: 40px;
+    margin-top: 20%;
+    text-align: center;
+    background-color: rgb(87, 55, 30);
+    width: 100;
+    height: 40px;
+    color: white;
+    position: sticky;
+}
+
+/* Background */
+
+.bodystyling{
+    background-image: url(https://media.istockphoto.com/photos/white-paper-background-picture-id1040425512?b=1&k=20&m=1040425512&s=170667a&w=0&h=mo6rWtHjzwQCJuwcBjRBzPuSzvZ-iDWqpAHDDrXETOg=);
+    background-size: cover;
+    
+}
+
+.bodystyling2 {
+    background-color: rgb(252, 221, 181);
+    background-size: cover;
+}
+
+/* item lineupps/store CSS*/
+
+.items img {
+  border: 0px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.category {
+ margin-bottom: 2em;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0
+}
+
+.items li {
+  list-style-type: none;
+  background-color: #fff;
+  padding: 16px;
+  border: burlywood solid 3px;
+  border-radius: 2px;
+}
+
+.items li img {
+  margin-bottom: 16px;
+}
+
+.item-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.item-link, 
+.item-link:active,
+.item-link:hover {
+  color: #000;
+  text-decoration: none;
+  border: none;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-price {
+  float: right;
+}
+
+/*navigationbar CSS*/
+
+.logoimage {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    width: 100;
+    overflow: hidden;
+}
+.navbar li {
+    float: left;
+    /*Makes the list go into the left corner*/
+    text-align: center;
+    /*makes the text centered from the float point (which is now left)*/
+}
+
+.navbar a {
+    display:block;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    /*this all makes the clickable text turn into clickable blocks*/
+}
+
+.navbar li a:hover{
+color: rgb(166, 215, 255);
+text-decoration: underline;
+}
+
+.navbarfix {
+    float: left;
+    border-right: rgb(255, 255, 255) solid 8px;
+    border-bottom: rgb(255, 255, 255) solid 8px;
+    width: 60%;
+}
+
+.navbarfix2 {
+padding-top: 30px;
+}
+
+/* Here begins the social media stuff, sticky bar and the actual contact us page CSS*/
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  /* Contact us page CSS*/
+
+
+.socials body {
+    margin:0;
+    padding:0;
+    background:#ccc;
+    font-family: 'Roboto Condensed', sans-serif;
+  
+  }
+  
+  .socials ul {
+    position: absolute;
+    top: 80%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display:flex;
+    margin:0;
+    padding:0;
+  }
+  
+  .socials ul li {
+    list-style:none;
+    margin:0 5px;
+  }
+  
+  .socials ul li a .fa {
+    font-size: 40px;
+    color: #262626;
+    line-height:80px;
+    transition: .5s;
+    padding-right: 14px;
+  }
+  
+  .socials ul li a span {
+    padding:0;
+    margin:0;
+    position:absolute;
+    top: 30px;
+    color: #262626;
+    letter-spacing: 4px;
+    transition: .5s;
+  }
+  
+  .socials ul li a {
+    text-decoration: none;
+    display:absolute;
+    display:block;
+    width:210px;
+    height:80px;
+    background: burlywood;
+    text-align:left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    transition:.5s;
+    box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+  }
+  .socials ul li a:before {
+    content: '';
+    position: absolute;
+    top:10px;
+    left:-20px;
+    height:100%;
+    width:20px;
+    background: rgb(207, 172, 127);
+    transform: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+  }
+  .socials ul li a:after {
+    content: '';
+    position: absolute;
+    bottom:-20px;
+    left:-10px;
+    height:20px;
+    width:100%;
+    background: rgb(207, 172, 127);
+    transform: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+  }
+  
+  .socials ul li a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+    box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+  }
+  
+  .socials ul li:hover .fa {
+    color: burlywood
+  }
+  
+  .socials ul li:hover span {
+    color:burlywood
+  }
+  
+  .socials ul li:hover:nth-child(1) a{
+    background: #3b5998;
+  }
+  .socials ul li:hover:nth-child(1) a:before{
+    background: #365492;
+  }
+  .socials ul li:hover:nth-child(1) a:after{
+    background: #4a69ad;
+  }
+  
+  .socials ul li:hover:nth-child(2) a{
+    background: #00aced;
+  }
+  .socials ul li:hover:nth-child(2) a:before{
+    background: #097aa5;
+  }
+  .socials ul li:hover:nth-child(2) a:after{
+    background: #53b9e0;
+  }
+  
+  .socials ul li:hover:nth-child(3) a{
+    background: #dd4b39;
+  }
+  .socials ul li:hover:nth-child(3) a:before{
+    background: #b33a2b;
+  }
+  .socials ul li:hover:nth-child(3) a:after{
+    background: #e66a5a;
+  }
+  
+  .socials ul li:hover:nth-child(4) a{
+    background: #e4405f;
+  }
+  .socials ul li:hover:nth-child(4) a:before{
+    background: #d81c3f;
+  }
+  .socials ul li:hover:nth-child(4) a:after{
+    background: #e46880;
+  }
